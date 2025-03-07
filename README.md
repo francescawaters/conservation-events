@@ -84,14 +84,13 @@ Live link: [Cornwall Conservation Events](https://cornwall-conservation-events.h
 ### Wireframes
 
 ## Home Page
-![Home Page](docs/wireframes/home-page.png)
+![Home Page](docs\wireframes\home-page.png)
 
 ## Event Page
-![Event Page](docs/wireframes/event-page.png)
+![Event Page](docs\wireframes\event-page.png)
 
 ## About Page
-![About Page](docs/wireframes/about-page.png)
+![About Page](docs\wireframes\about-page.png)
 
 ## Contact Page
-![Contact Page](docs/wireframes/contact-page.png)
-
+![Contact Page](docs\wireframes\contact-page.png)
