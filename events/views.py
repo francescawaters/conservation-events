@@ -44,6 +44,6 @@ def event_detail(request, slug):
 
     return render(
         request,
-        "events/event_detail.html",
+        "event_detail.html",
         {"event": event},
     )

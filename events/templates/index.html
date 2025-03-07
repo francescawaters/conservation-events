@@ -7,11 +7,11 @@
      <!-- Header with carousel -->
      <header id="header" class="container section">
         <div class="row">
-            <div class="col-12 col-xl-6 text-center text-xl-start">
+            <div class="col-12 col-xl-6 text-center">
                 <h1 class="display-3">Cornwall Conservation Events</h1>
                 <p class="lead display-7 sub-heading-color">Welcome to our conservation events page. Join us in making a difference!</p>
                 <p class="my-4">Get in contact to post your upcoming events.</p>
-                <a href="booking.html" class="btn custom-button-outline mb-4">Contact Us</a>
+                <a href="contact.html" class="btn custom-btn mb-4">Contact Us</a>
             </div>
             <div class="col-12 col-xl-6">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -74,7 +74,7 @@
                         <img
                           class="card-img-top"
                           src=" {{ event.featured_image.url }}"
-                          alt="{{ post.title }}"
+                          alt="{{ event.title }}"
                         />
                         {% endif %}
                       </div>
@@ -84,7 +84,7 @@
 
                       <hr />
                       <p class="card-text text-muted h6">
-                        {{ event.created_on}}
+                        {{ event.date}} | {{ event.location }}
                       </p>
                     </div>
                   </div>
