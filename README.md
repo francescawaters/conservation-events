@@ -86,12 +86,6 @@ Live link: [Cornwall Conservation Events](https://cornwall-conservation-events.h
 ## Home Page
 ![Home Page](Static/images/readme/home-page.png)
 
-
-<img src=Static/images/readme/home-page.png image alt="desktop and mobile wireframe for homepage" width="600" height="300">
-
-
-<img src=static/images/readme/home-page.png image alt="desktop and mobile wireframe for homepage" width="600" height="300">
-
 ## Event Page
 ![Event Page](Static/images/readme/event-page.png)
 
