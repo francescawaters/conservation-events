@@ -27,7 +27,7 @@ class Event(models.Model):
     updated_on = models.DateTimeField(auto_now=True)
 
     class Meta:
-        ordering = ["-date"]
+        ordering = ["date"]
 
     def __str__(self):
         return f"{self.title}"
