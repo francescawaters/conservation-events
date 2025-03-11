@@ -11,6 +11,8 @@
             <h2>{{ about.title }}</h2>
             <!-- Content goes directly underneath this -->
             <p>{{ about.content | safe }}</p>
+            <!-- Button to go back to the home page -->
+            <a href="{% url 'home' %}" class="btn custom-btn mb-4">Upcoming Events</a>
         </div>
     </div>
     <div class="row">
