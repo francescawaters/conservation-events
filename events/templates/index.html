@@ -81,7 +81,7 @@
                         {% endif %}
                       </div>
                       <a href="{% url 'event_detail' event.slug %}" class="event-link">
-                        <h2 id="event-title">{{ event.title }}</h2>
+                        <h2 class="mt-2">{{ event.title }}</h2>
                       </a>
 
                       <hr />
@@ -100,10 +100,10 @@
           <nav aria-label="Page navigation">
               <ul class="pagination justify-content-center">
                   {% if page_obj.has_previous %}
-                  <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV </a></li>
+                  <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link"><i class="fa-regular fa-circle-left"></i></a></li>
                   {% endif %}
                   {% if page_obj.has_next %}
-                  <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
+                  <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"><i class="fa-regular fa-circle-right"></i></a></li>
                   {% endif %}
               </ul>
           </nav>

@@ -3,15 +3,17 @@
 /* CSS Variables */
 :root {
   --primary-font: "Inter", sans-serif;
-  --secondary-font: "Oswald", sans-serif;
-  --primary-color: #081824;
+  --secondary-font: "Lato", sans-serif;
+  --primary-color: #445261;
+  /* dark grey */
+  --secondary-color: #013e57;
   /* dark blue */
-  --secondary-color: #445261;
-  /* light blue */
-  --highlight-color: #ce9542;
-  /* blue */
+  --accent-color: #ce9542;
+  /* gold */
+  --highlight-color: #005B80;
+  /* blue*/
   --highlight-color-light: #F9FAFC;
-  /* light blue */
+  /* off white */
 }
 
 /* Global */
@@ -23,7 +25,13 @@ body {
 h1,
 h2 {
   font-family: var(--secondary-font);
-  color: var(--secondary-color);
+  color: var(--highlight-color);
+}
+
+h3,
+h4 {
+  font-family: var(--primary-font);
+  color: var(--highlight-color);
 }
 
 p {
@@ -54,9 +62,19 @@ p {
 /* Buttons */
 
 .custom-btn {
+  padding: 10px 20px;
   background-color: var(--highlight-color);
   color: var(--highlight-color-light);
-  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.custom-btn:hover {
+  background-color: var(--highlight-color-light);
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  transition: color 0.3s ease-in-out;
 }
 
 /* Navbar */
@@ -108,14 +126,22 @@ p {
   height: 100%;
 }
 
-
 .event-link {
   text-decoration: none;
 }
 
-.event-link:hover,
 .page-link {
   color: var(--highlight-color);
+  border: none;
+  font-size: 3rem;
+  background-color: transparent;
+
+}
+
+h2:hover,
+.page-link:hover {
+  color: var(--accent-color);
+  background-color: transparent;
 }
 
 .image-container {
@@ -140,10 +166,10 @@ p {
   display: inline-block;
   height: 33vh;
   width: 100%;
+  background-color: var(--secondary-color);
 }
 
 .masthead-text {
-  background-color: #445261;
   color: var(--highlight-color-light);
   position: relative;
 }
@@ -201,6 +227,8 @@ footer .social-links i:hover {
 
 .event-title {
   color: var(--highlight-color-light);
+  font-weight: 800;
+  font-size: 3rem;
   margin-top: 10%;
   margin-left: 5%;
 }
@@ -208,6 +236,10 @@ footer .social-links i:hover {
 .event-subtitle {
   margin-left: 5%;
   color: lightgray;
+}
+
+.form-label {
+  display: none;
 }
 
 /* Signup */
@@ -225,13 +257,13 @@ footer .social-links i:hover {
 }
 
 .link {
-  color: #23BBBB;
+  color: var(--highlight-color);
   text-decoration: none;
 }
 
 .link:hover,
 .link:active {
-  color: #445261;
+  color: var(--primary-color);
   text-decoration: underline;
 }
 
