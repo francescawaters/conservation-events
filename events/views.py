@@ -1,9 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.views import generic
 from .models import Event
-from django.shortcuts import render, get_object_or_404
 
 # Create your views here.
+
 
 class EventList(generic.ListView):
     """
@@ -21,7 +21,7 @@ class EventList(generic.ListView):
     :template:`blog/index.html`
     """
     queryset = Event.objects.filter(status=1)
-    template_name = "index.html" 
+    template_name = "index.html"
     paginate_by = 6
 
 
@@ -36,14 +36,20 @@ def event_detail(request, slug):
 
     **Template:**
 
-    :template:`events/event_detail.html`
+    :template:`event_detail.html`
     """
 
     queryset = Event.objects.filter(status=1)
     event = get_object_or_404(queryset, slug=slug)
+    comments = event.comments.all().order_by("-created_on")
+    comment_count = event.comments.filter(approved=True).count()
 
     return render(
         request,
         "event_detail.html",
-        {"event": event},
+        {
+            "event": event,
+            "comments": comments,
+            "comment_count": comment_count,
+        },
     )

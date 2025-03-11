@@ -43,6 +43,14 @@ p {
   background-color: var(--highlight-color-light);
 }
 
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.font-weight-normal {
+  font-weight: normal;
+}
+
 /* Buttons */
 
 .custom-btn {
