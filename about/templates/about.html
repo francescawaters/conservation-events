@@ -14,7 +14,7 @@
             <!-- Content goes directly underneath this -->
             <p>{{ about.content | safe }}</p>
             <!-- Button to go back to the home page -->
-            <a href="{% url 'home' %}" class="btn custom-btn mb-4">Upcoming Events</a>
+            <a href="{% url 'home' %}#events-section" class="btn custom-btn mb-4">Upcoming Events</a>
         </div>
     </div>
     <div class="row">
@@ -23,7 +23,7 @@
             <p class="text-end"><em>Updated on: {{ about.updated }}</em></p>
         </div>
     </div>
-    <div class="row justify-content-center">
+    <div id="contact-section" class="row justify-content-center">
         <div class="col-12 col-md-6 my-5">
             <h2>Don't see your event?</h2>
             <p>Please get in touch if you want to see your event posted
@@ -35,7 +35,7 @@
             <form method="POST">
                 {% csrf_token %}
                 {{ contact | crispy }}
-                <button type="submit" class="btn btn-secondary">Submit</button>
+                <button type="submit" class="btn submit-btn">Submit</button>
             
         </div>
     </div>

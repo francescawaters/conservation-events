@@ -10,7 +10,8 @@
 <html class="h-100" lang="en">
   <head>
     <title>Cornwall Conservation Events</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
 
     <!-- Font Awesome CSS -->
     <link
@@ -51,13 +52,13 @@
 
   <body class="d-flex flex-column h-100 main-bg">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar fixed-top navbar-expand-lg" role="navigation">
       <div class="container-fluid ">
         <a class="navbar-brand" href="{% url 'home' %}">
           <img
             id="logo"
             src="{% static 'images/logo.jpg' %}"
-            alt="logo"
+            alt="Cornwall Conservation Events logo"
             width="50"
             height="50"
             class="d-inline-block align-text-top"
@@ -65,7 +66,7 @@
         </a>
         <button
           id="nav-btn"
-          class="navbar-toggler"
+          class="navbar-toggler custom-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarText"
@@ -169,23 +170,22 @@
           <div class="col-md-8 col-lg-6 text-center text-lg-end my">
             <div class="social-links">
               <a
-                href="https://www.seasearch.org.uk/"
+                href="https://www.instagram.com"
                 target="_blank"
-                aria-label="Go to Seasearch website (opens in a new tab)"
+                aria-label="Go to Instagram (opens in a new tab)"
                 rel="noopener"
-                ><i class="fa-solid fa-globe"></i
-              ></a>
+                ><i class="fa-brands fa-instagram"></i></a>
               <a
-                href="https://www.facebook.com/groups/seasearch"
+                href="https://www.facebook.com"
                 target="_blank"
-                aria-label="Go to Seasearch Facebook group (opens in a new tab)"
+                aria-label="Go to Facebook (opens in a new tab)"
                 rel="noopener"
                 ><i class="fa-brands fa-facebook-f"></i
               ></a>
               <a
-                href="https://x.com/i/flow/login?redirect_after_login=%2F_seasearch"
+                href="https://x.com"
                 target="_blank"
-                aria-label="Go to Seasearch X page (opens in a new tab)"
+                aria-label="Go to X (opens in a new tab)"
                 rel="noopener"
                 ><i class="fa-brands fa-x-twitter"></i
               ></a>
