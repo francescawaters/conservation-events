@@ -80,16 +80,33 @@ p {
 /* Navbar */
 .navbar {
   box-shadow: var(--primary-color) 0px 0px 10px;
+  background-color: var(--secondary-color);
+}
+
+.navbar-nav {
+  margin: 0 50px;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  color: var(--highlight-color-light);
+  font-family: var(--secondary-font);
+  font-size: large;
+}
+
+.nav-link:hover {
+  color: var(--accent-color);
 }
 
 #logo {
   border-radius: 50%;
-  box-shadow: var(--primary-color) 5px 5px 5px;
 }
 
 #nav-btn {
   background-color: var(--highlight-color);
-  box-shadow: var(--primary-color) 5px 5px 5px;
 }
 
 /* Carousel */
@@ -141,7 +158,7 @@ p {
 
 }
 
-h2:hover,
+.event-link-title:hover,
 .page-link:hover {
   color: var(--accent-color);
   background-color: transparent;
