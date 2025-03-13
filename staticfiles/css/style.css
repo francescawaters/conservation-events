@@ -20,6 +20,12 @@
 
 body {
   background-color: var(--highlight-color-light);
+  margin-top: 90px;
+}
+
+#events-section {
+  padding-top: 69px; /* Adjust this value based on the height of your navbar */
+  margin-top: 0; /* Remove the existing margin-top */
 }
 
 h1,
@@ -70,13 +76,21 @@ p {
   font-size: 1.2rem;
 }
 
-.custom-btn:hover {
+.submit-btn {
+  background-color: var(--highlight-color);
+  color: var(--highlight-color-light);
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.custom-btn:hover,
+.submit-btn:hover {
   background-color: var(--highlight-color-light);
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
   transition: color 0.3s ease-in-out;
 }
-
 /* Navbar */
 .navbar {
   box-shadow: var(--primary-color) 0px 0px 10px;
@@ -105,8 +119,13 @@ p {
   border-radius: 50%;
 }
 
-#nav-btn {
-  background-color: var(--highlight-color);
+.custom-toggler {
+  border-color: #fff; /* Change the border color */
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  /* Change the icon color */
 }
 
 /* Carousel */
@@ -155,7 +174,6 @@ p {
   border: none;
   font-size: 3rem;
   background-color: transparent;
-
 }
 
 .event-link-title:hover,
