@@ -169,7 +169,8 @@ p {
   text-decoration: none;
 }
 
-.page-link {
+.page-nav {
+  padding: 0;
   color: var(--highlight-color);
   border: none;
   font-size: 3rem;
@@ -177,7 +178,7 @@ p {
 }
 
 .event-link-title:hover,
-.page-link:hover {
+.page-nav:hover {
   color: var(--accent-color);
   background-color: transparent;
 }
