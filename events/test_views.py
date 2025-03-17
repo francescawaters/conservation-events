@@ -39,3 +39,18 @@ class TestEventViews(TestCase):
         self.assertIn(b"This is a test event", response.content)
         self.assertIsInstance(
             response.context['comment_form'], CommentForm)
+
+    def test_successful_comment_submission(self):
+        """
+        Test that a comment can be successfully submitted.
+        """
+        self.client.login(username='testuser', password='testpassword')
+        event_data = {
+            'body': 'This is a test comment',
+        }
+        response = self.client.post(reverse(
+            'event_detail', args=['event-title']
+            ), event_data)
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(b'Comment submitted and awaiting approval',
+                      response.content)
