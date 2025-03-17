@@ -9,17 +9,13 @@
             <img src="{% static 'images/logo.jpg' %}" width="75%" class="rounded-circle" alt="Profile photo of the page author">
         </div>
         <div class="col-8">
-            <!-- Title goes between these h2 tags -->
             <h2>{{ about.title }}</h2>
-            <!-- Content goes directly underneath this -->
             <p>{{ about.content | safe }}</p>
-            <!-- Button to go back to the home page -->
             <a href="{% url 'home' %}#events-section" class="btn custom-btn mb-4">Upcoming Events</a>
         </div>
     </div>
     <div class="row">
         <div class="col text-right">
-            <!-- Updated on field goes in here -->
             <p class="text-end"><em>Updated on: {{ about.updated }}</em></p>
         </div>
     </div>
@@ -30,8 +26,6 @@
                 on our site. We would love to hear from you!
             </p>
 
-            <!-- add your form here. Your submit button should 
-                                have the classes of btn, btn-secondary -->
             <form method="POST">
                 {% csrf_token %}
                 {{ contact | crispy }}
