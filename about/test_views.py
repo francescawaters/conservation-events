@@ -20,3 +20,15 @@ class TestAboutViews(TestCase):
         self.assertIn(b"About Us", response.content)
         self.assertIn(b"This is a test about us content.", response.content)
         self.assertIsInstance(response.context['contact'], ContactForm)
+
+    def test_successful_contact_form_submission(self):
+        """ Test successful contact form submission """
+        contact_data = {
+            'name': 'Test User',
+            'email': 'test@test.com',
+            'message': 'This is a test message.',
+        }
+        response = self.client.post(reverse('about'), contact_data)
+        print(response.content)  # Add this line to inspect the response
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(b"Message sent successfully.", response.content)
