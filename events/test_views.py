@@ -31,6 +31,9 @@ class TestEventViews(TestCase):
         self.event.save()
 
     def test_render_event_detail_page_with_comment_form(self):
+        """
+        Test that the event detail page renders with a comment form.
+        """
         response = self.client.get(reverse(
             'event_detail', args=['event-title']
             ))

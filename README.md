@@ -1,27 +1,29 @@
 # Cornwall Conservation Events
+
 This is a simple web application that displays a list of conservation events in Cornwall. The events are stored in a database and can be added, edited, and deleted. Site users can also comment on events.
 
 Live link: [Cornwall Conservation Events](https://cornwall-conservation-events.herokuapp.com/)
 
 ## Table of Contents
+
 1. [UX Design](#ux-design)
-    1. [Colour Scheme](#colour-scheme)
-    2. [Typography](#typography)
-    3. [Imagery](#imagery)
-    4. [User Stories](#user-stories)
-    5. [Wireframes](#wireframes)
-    6. [ERD Diagram](#erd-diagram)
+   1. [Colour Scheme](#colour-scheme)
+   2. [Typography](#typography)
+   3. [Imagery](#imagery)
+   4. [User Stories](#user-stories)
+   5. [Wireframes](#wireframes)
+   6. [ERD Diagram](#erd-diagram)
 2. [Features](#features)
-    1. [Existing Features](#existing-features)
-    2. [Features Left to Implement](#features-left-to-implement)
+   1. [Existing Features](#existing-features)
+   2. [Features Left to Implement](#features-left-to-implement)
 3. [Technologies Used](#technologies-used)
-    1. [How AI Was Used](#how-ai-was-used)
+   1. [How AI Was Used](#how-ai-was-used)
 4. [Testing](#testing)
 5. [Deployment](#deployment)
 6. [Credits](#credits)
-    1. [Content](#content)
-    2. [Media](#media)
-    3. [Acknowledgements](#acknowledgements)
+   1. [Content](#content)
+   2. [Media](#media)
+   3. [Acknowledgements](#acknowledgements)
 
 ## UX Design
 
@@ -41,73 +43,86 @@ The site uses images that are relevant to the events being displayed. These imag
 
 1. As a site user, I can click on an event so that I can read the full text.
 
-    **Acceptance criteria**
-    - When an event post title is clicked on, a detailed view of the event is seen.
+   **Acceptance criteria**
+
+   - When an event post title is clicked on, a detailed view of the event is seen.
 
 2. As a site user, I can view a paginated list of events so that I can select which event I want to view.
 
-    **Acceptance criteria**
-    - Given more than one event in the database, these multiple events are listed.
-    - When a user opens the main page, a list of events is seen.
-    - Then the user sees all event titles with pagination to choose what to read.
+   **Acceptance criteria**
+
+   - Given more than one event in the database, these multiple events are listed.
+   - When a user opens the main page, a list of events is seen.
+   - Then the user sees all event titles with pagination to choose what to read.
 
 3. As a Site User / Admin, I can view comments on an individual post so that I can read the conversation.
 
-    **Acceptance criteria**
-    - Given one or more user comments, the admin can view them.
-    - Then a site user can click on the comment thread to read the conversation.
+   **Acceptance criteria**
+
+   - Given one or more user comments, the admin can view them.
+   - Then a site user can click on the comment thread to read the conversation.
 
 4. As a site user, I can modify or delete my comment on a post so that I can be involved in the conversation.
 
-    **Acceptance criteria**
-    - Given a logged-in user, they can modify their comment.
-    - Given a logged-in user, they can delete their comment.
+   **Acceptance criteria**
+
+   - Given a logged-in user, they can modify their comment.
+   - Given a logged-in user, they can delete their comment.
 
 5. As a site admin, I can approve or disapprove comments so that I can filter out objectionable comments.
 
-    **Acceptance criteria**
-    - Given a logged-in user, they can approve a comment.
-    - Given a logged-in user, they can disapprove a comment.
+   **Acceptance criteria**
+
+   - Given a logged-in user, they can approve a comment.
+   - Given a logged-in user, they can disapprove a comment.
 
 6. As a site user, I can register an account so that I can comment on a post.
 
-    **Acceptance criteria**
-    - Given an email, a user can register an account.
-    - Then the user can log in.
-    - When the user is logged in, they can comment.
+   **Acceptance criteria**
+
+   - Given an email, a user can register an account.
+   - Then the user can log in.
+   - When the user is logged in, they can comment.
 
 7. As a site admin, I can create draft events so that I can finish writing the content later.
 
-    **Acceptance criteria**
-    - Given a logged-in user, they can save a draft event post.
-    - Then they can finish the content at a later time.
+   **Acceptance criteria**
+
+   - Given a logged-in user, they can save a draft event post.
+   - Then they can finish the content at a later time.
 
 8. As a site admin, I can create, read, update and delete posts so that I can manage my event content.
 
-    **Acceptance criteria**
-    - Given a logged-in user, they can create an event.
-    - Given a logged-in user, they can read an event post.
-    - Given a logged-in user, they can update an event.
-    - Given a logged-in user, they can delete an event.
+   **Acceptance criteria**
+
+   - Given a logged-in user, they can create an event.
+   - Given a logged-in user, they can read an event post.
+   - Given a logged-in user, they can update an event.
+   - Given a logged-in user, they can delete an event.
 
 9. As a site user, I can search for an event using tags so that I can find the event I am looking for.
 
-    **Acceptance criteria**
-    - Given a search bar, a user can type in a tag.
-    - Then the user can see a list of events with that tag.
+   **Acceptance criteria**
+
+   - Given a search bar, a user can type in a tag.
+   - Then the user can see a list of events with that tag.
 
 ### Wireframes
 
 #### Home Page
+
 ![Home Page](static/images/readme/home-page-wireframe.png)
 
 #### Event Page
+
 ![Event Page](static/images/readme/event-page-wireframe.png)
 
 #### About Page
+
 ![About Page](static/images/readme/about-page-wireframe.png)
 
 #### Contact Page
+
 ![Contact Page](static/images/readme/contact-page-wireframe.png)
 
 ### ERD Diagram
@@ -132,7 +147,7 @@ The site uses images that are relevant to the events being displayed. These imag
 
 4. **Contact Form** - The about page displays a contact form.
 
-![Contact Form](static/images/readme/contact-form.png)  
+![Contact Form](static/images/readme/contact-form.png)
 
 5. **Search Bar** - The search bar allows the user to search for events by tag.
 
@@ -163,6 +178,7 @@ The site uses images that are relevant to the events being displayed. These imag
 ![Admin Features](static/images/readme/admin-features.png)
 
 ### Features Left to Implement
+
 1. **User Profile** - The user can view their profile and update their details.
 
 2. **User Password Reset** - The user can reset their password.
@@ -204,6 +220,39 @@ By leveraging AI, the project was able to achieve a higher level of efficiency, 
 
 ## Testing
 
+The site was tested manually and using automated tests.
+
+### Manual Testing
+
+Manual testing was performed on the site to ensure that all features worked as expected. This included testing the following:
+| Test | Expected Result | Actual Result |
+|--- |--- |--- |
+| Click Home menu | success | success |
+| Click About menu | success | success |
+| Click Resgister | success | success |
+| Click Login | success | success |
+| Click Logout | success | success |
+| Click Contact Us button | success | success |
+| Click Upcoming Events button | success | success |
+| Click individual event post | success | success |
+| Click back to event list | success | success |
+| Create, edit, delete a personal comment | success | success |
+| Register new account | success | success |
+| Create contact request | success | success |
+| Access admin interface | success | success |
+| Responsivity | success | success |
+| Open new page from social media links | success | success |
+
+### Automated Testing
+
+Automated tests were written using the Django test framework. These tests were run using the `python manage.py test` command and tested the following:
+
+- The home page loads successfully.
+- The event detail page loads successfully.
+- The about page loads successfully.
+- The comment form submits successfully.
+- The contact form submits successfully.
+
 ## Deployment
 
 The site was deployed to Heroku from the main branch of the repository early in the development stage for continuous deployment and checking.
@@ -212,13 +261,13 @@ The Heroku app is setup with 3 environment variables, repalcing the environment 
 
 In order to create an Heroku app:
 
- 1. Click on New in the Heroku dashboard, and Create new app from the menu dropdown.
+1.  Click on New in the Heroku dashboard, and Create new app from the menu dropdown.
 
- 2. Give your new app a unique name, and choose a region, preferably one that is geographically closest to you.
+2.  Give your new app a unique name, and choose a region, preferably one that is geographically closest to you.
 
- 3. Click "Create app"
+3.  Click "Create app"
 
- 4. In your app settings, click on "Reveal Config Vars" and add the environment variables for your app. These are:
+4.  In your app settings, click on "Reveal Config Vars" and add the environment variables for your app. These are:
 
         - DATABASE_URL - your database connection string
         - SECRET_Key - the secret key for your app
@@ -234,13 +283,12 @@ Once the app setup is complete, click on the Deploy tab and:
     4. Once deployment finishes the app can be launched.
 
 ## Credits
+This project is based on the "I Think Therefore I Blog" project from the LMS.
 
 ### Content
 
-The content for the site was created by the developer.
+The content for the site was sourced from official event pages.
 
 ### Media
 
-The images used on the site were sourced from Cloudinary.
-
-### Acknowledgements
+The images used on the site were hosted on Cloudinary and sourced from official event pages.
