@@ -20,10 +20,8 @@ class Event(models.Model):
     location = models.CharField(max_length=200)
     date = models.DateField()
     time = models.TimeField()
-    tags = models.CharField(max_length=200)
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
-    excerpt = models.TextField(blank=True)
     updated_on = models.DateTimeField(auto_now=True)
 
     class Meta:
