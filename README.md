@@ -2,7 +2,7 @@
 
 This is a simple web application that displays a list of conservation events in Cornwall. The events are stored in a database and can be added, edited, and deleted. Site users can also comment on events.
 
-Live link: [Cornwall Conservation Events](https://cornwall-conservation-events.herokuapp.com/)
+Live link: [Cornwall Conservation Events](https://cons-events-app-186c83f9afb9.herokuapp.com/)
 
 ## Table of Contents
 
@@ -99,7 +99,7 @@ The user stories were used to create a kanban board to track the development of 
 
 7. **Response Messages** - The user receives messages when they perform an action such as adding a comment.
 
-![Response Messages](static/images/readme/response-messages.png)
+![Response Messages](static/images/readme/response-message.png)
 
 8. **User Registration** - The user can register an account to comment on events.
 
@@ -221,6 +221,8 @@ Once the app setup is complete, click on the Deploy tab and:
     2. Select the repository to deploy from
     3. Click the Deploy Branch button to start the deployment.
     4. Once deployment finishes the app can be launched.
+
+The app can be accessed at the following link: [Cornwall Conservation Events](https://cons-events-app-186c83f9afb9.herokuapp.com/)
 
 ## Credits
 This project is based on the "I Think Therefore I Blog" project from the LMS.
