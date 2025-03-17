@@ -153,7 +153,7 @@ The site uses images that are relevant to the events being displayed. These imag
 
 ![Search Bar](static/images/readme/search-bar.png)
 
-6. **Navigation Bar** - The navigation bar allows the user to navigate the site and is provided via Bootstrap.
+6. **Navigation Bar** - The navigation bar allows the user to navigate the site pages and is provided via Bootstrap.
 
 ![Navigation Bar](static/images/readme/navigation-bar.png)
 
@@ -175,7 +175,7 @@ The site uses images that are relevant to the events being displayed. These imag
 
 11. **Admin Features** - The admin can create, read, update and delete events. They can also approve or disapprove comments.
 
-![Admin Features](static/images/readme/admin-features.png)
+![Admin Features](static/images/readme/admin.png)
 
 ### Features Left to Implement
 
