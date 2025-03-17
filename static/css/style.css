@@ -9,7 +9,7 @@
   --secondary-color: #013e57;
   /* dark blue */
   --accent-color: #23BBBB;
-  /* gold */
+  /* teal */
   --highlight-color: #005B80;
   /* blue*/
   --highlight-color-light: #F9FAFC;
@@ -25,7 +25,7 @@ body {
 
 #events-section {
   padding-top: 69px; /* Adjust this value based on the height of your navbar */
-  margin-top: 0; /* Remove the existing margin-top */
+  margin-top: 0;
 }
 
 h1,
@@ -40,21 +40,19 @@ h4 {
   color: var(--highlight-color);
 }
 
-p {
+p,
+.alert {
   font-family: var(--primary-font);
   color: var(--primary-color);
 }
 
-.light-bg {
+.light-bg,
+.main-bg {
   background-color: var(--highlight-color-light);
 }
 
 .dark-bg {
   background-color: var(--secondary-color);
-}
-
-.main-bg {
-  background-color: var(--highlight-color-light);
 }
 
 .font-weight-bold {
@@ -63,11 +61,6 @@ p {
 
 .font-weight-normal {
   font-weight: normal;
-}
-
-.alert {
-  font-family: var(--primary-font);
-  color: var(--highlight-color);
 }
 
 /* Buttons */
@@ -82,20 +75,16 @@ p {
 }
 
 .submit-btn {
-  background-color: var(--highlight-color);
-  color: var(--highlight-color-light);
-  border-radius: 10px;
-  font-weight: bold;
-  padding: 10px 20px;
+  font-size: 1rem;
 }
 
-.custom-btn:hover,
-.submit-btn:hover {
+.custom-btn:hover {
   background-color: var(--highlight-color-light);
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
   transition: color 0.3s ease-in-out;
 }
+
 /* Navbar */
 .navbar {
   box-shadow: var(--primary-color) 0px 0px 10px;
@@ -125,12 +114,11 @@ p {
 }
 
 .custom-toggler {
-  border-color: #fff; /* Change the border color */
+  border-color: #fff;
 }
 
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  /* Change the icon color */
 }
 
 /* Carousel */
@@ -257,8 +245,6 @@ footer .social-links i {
   color: var(--highlight-color-light);
   font-size: 1.9rem;
   margin: 0 10px;
-  -webkit-transition: color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
 
@@ -290,14 +276,14 @@ footer .social-links i:hover {
 
 .btn-signup,
 .btn-edit {
-  background-color: #188181;
-  color: #fff;
+  background-color: var(--accent-color);
+  color: var(--highlight-color-light);
 }
 
 .btn-signup:hover,
 .btn-signup:active {
-  background-color: #fff;
-  color: #23BBBB;
+  background-color: var(--highlight-color-light);
+  color: var(--highlight-color);
 }
 
 .link {
