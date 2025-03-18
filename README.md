@@ -67,7 +67,7 @@ The user stories were used to create a kanban board to track the development of 
 
 ### ERD Diagram
 
-![ERD Diagram](static/images/readme/erd-diagram.png)
+![ERD Diagram](static/images/readme/erd.png)
 
 ## Features
 
@@ -89,31 +89,27 @@ The user stories were used to create a kanban board to track the development of 
 
 ![Contact Form](static/images/readme/contact-form.png)
 
-5. **Search Bar** - The search bar allows the user to search for events by tag.
-
-![Search Bar](static/images/readme/search-bar.png)
-
-6. **Navigation Bar** - The navigation bar allows the user to navigate the site pages and is provided via Bootstrap.
+5. **Navigation Bar** - The navigation bar allows the user to navigate the site pages and is provided via Bootstrap.
 
 ![Navigation Bar](static/images/readme/navigation-bar.png)
 
-7. **Response Messages** - The user receives messages when they perform an action such as adding a comment.
+6. **Response Messages** - The user receives messages when they perform an action such as adding a comment.
 
 ![Response Messages](static/images/readme/response-message.png)
 
-8. **User Registration** - The user can register an account to comment on events.
+7. **User Registration** - The user can register an account to comment on events.
 
 ![User Registration](static/images/readme/user-registration.png)
 
-9. **User Login** - The user can log in to comment on events.
+8. **User Login** - The user can log in to comment on events.
 
 ![User Login](static/images/readme/user-login.png)
 
-10. **User Logout** - The user can log out of their account.
+9. **User Logout** - The user can log out of their account.
 
 ![User Logout](static/images/readme/user-logout.png)
 
-11. **Admin Features** - The admin can create, read, update and delete events. They can also approve or disapprove comments.
+10. **Admin Features** - The admin can create, read, update and delete events. They can also approve or disapprove comments.
 
 ![Admin Features](static/images/readme/admin.png)
 
@@ -122,6 +118,8 @@ The user stories were used to create a kanban board to track the development of 
 1. **User Profile** - The user can view their profile and update their details.
 
 2. **User Password Reset** - The user can reset their password.
+
+3. **Search Bar** - The search bar allows the user to search for events by tag.
 
 ## Technologies Used
 
