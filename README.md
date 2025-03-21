@@ -10,7 +10,7 @@ Live link: [Cornwall Conservation Events](https://cons-events-app-186c83f9afb9.h
    1. [Colour Scheme](#colour-scheme)
    2. [Typography](#typography)
    3. [Imagery](#imagery)
-   4. [User Stories](#user-stories)
+   4. [User Stories and kanban board](#user-stories-and-kanban-board)
    5. [Wireframes](#wireframes)
    6. [ERD Diagram](#erd-diagram)
 2. [Features](#features)
@@ -19,11 +19,14 @@ Live link: [Cornwall Conservation Events](https://cons-events-app-186c83f9afb9.h
 3. [Technologies Used](#technologies-used)
    1. [How AI Was Used](#how-ai-was-used)
 4. [Testing](#testing)
+   1. [Manual Testing](#manual-testing)
+   2. [Automated Testing](#automated-testing)
+   3. [Code Validation](#code-validation)
+   4. [LightHouse Testing](#lighthouse-testing)
 5. [Deployment](#deployment)
-6. [Credits](#credits)
+6. [Credits and Acknowledgements](#credits-and-acknowledgements)
    1. [Content](#content)
    2. [Media](#media)
-   3. [Acknowledgements](#acknowledgements)
 
 ## UX Design
 
