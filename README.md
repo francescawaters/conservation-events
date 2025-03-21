@@ -191,6 +191,29 @@ Automated tests were written using the Django test framework. These tests were r
 - The comment form submits successfully.
 - The contact form submits successfully.
 
+### Code Validation
+
+The code was validated using the following tools:
+
+- HTML was validated using the W3C Markup Validation Service.
+
+Three errors were found in the HTML validation, however, the errors were not found on inspection of the code.
+![HTML Validation](static/images/readme/HTML-validator.png)
+
+- CSS was validated using the W3C CSS Validation Service.
+
+No errors were found in the CSS validation.
+![CSS Validation](static/images/readme/CSS-validator.png)
+
+### LightHouse Testing
+
+The site was tested using Google LightHouse to check performance, accessibility, best practices, and SEO.
+
+The results were as follows:
+![LightHouse Testing](static/images/readme/lighthouse.png)
+
+The low score for best practises is caused by cloudinary images not having a secure URL which can't be altered in the code but is automatically upgraded to HTTPS.
+
 ## Deployment
 
 The site was deployed to Heroku from the main branch of the repository early in the development stage for continuous deployment and checking.
