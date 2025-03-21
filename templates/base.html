@@ -21,35 +21,31 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" >
 
     <!-- Favicon -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="{% static 'images/apple-touch-icon.png' %}"
-    />
+      href="{% static 'images/apple-touch-icon.png' %}" >
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="{% static 'images/favicon-32x32.png' %}"
-    />
+      href="{% static 'images/favicon-32x32.png' %}" >
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="{% static 'images/favicon-16x16.png' %}"
-    />
+      href="{% static 'images/favicon-16x16.png' %}" >
   </head>
 
   <body class="d-flex flex-column h-100 main-bg">
     <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg" role="navigation">
+    <nav class="navbar fixed-top navbar-expand-lg">
       <div class="container-fluid ">
         <a class="navbar-brand" href="{% url 'home' %}">
           <img
@@ -58,8 +54,7 @@
             alt="Cornwall Conservation Events logo"
             width="50"
             height="50"
-            class="d-inline-block align-text-top"
-          />
+            class="d-inline-block align-text-top">
         </a>
         <button
           id="nav-btn"
