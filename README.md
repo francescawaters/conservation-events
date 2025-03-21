@@ -43,7 +43,7 @@ The site uses images that are sourced from the events being displayed. These ima
 
 ### User Stories and kanban board
 
-The user stories were used to create a kanban board to track the development of the project.
+The user stories were used to create a kanban board to track the development of the project. The project was completed using agile methodology, ensuring iterative progress and continuous feedback.
 
 ![User Stories](static/images/readme/user-stories.png)
 
@@ -205,6 +205,10 @@ Three errors were found in the HTML validation, however, the errors were not fou
 No errors were found in the CSS validation.
 ![CSS Validation](static/images/readme/CSS-validator.png)
 
+- Python was validated using the CI Python Linter.
+
+No errors were found in the Python validation indicating that the code is PEP8 compliant.
+
 ### LightHouse Testing
 
 The site was tested using Google LightHouse to check performance, accessibility, best practices, and SEO.
@@ -245,8 +249,10 @@ Once the app setup is complete, click on the Deploy tab and:
 
 The app can be accessed at the following link: [Cornwall Conservation Events](https://cons-events-app-186c83f9afb9.herokuapp.com/)
 
-## Credits
-This project is based on the "I Think Therefore I Blog" project from the LMS.
+## Credits and Acknowledgements
+- The project structure and some code snippets were inspired by the "I Think Therefore I Blog" project from the LMS.
+- The project was developed using the Django web framework.
+- The project was deployed on Heroku.
 
 ### Content
 
