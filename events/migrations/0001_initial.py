@@ -18,20 +18,49 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Event',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                (
+                    'id',
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name=(
+                            'ID'
+                        )
+                    )
+                ),
                 ('title', models.CharField(max_length=200, unique=True)),
                 ('slug', models.SlugField(max_length=200, unique=True)),
-                ('featured_image', cloudinary.models.CloudinaryField(default='placeholder', max_length=255, verbose_name='image')),
+                (
+                    'featured_image',
+                    cloudinary.models.CloudinaryField(
+                        default='placeholder',
+                        max_length=255,
+                        verbose_name='image'
+                    )
+                ),
                 ('description', models.TextField()),
                 ('location', models.CharField(max_length=200)),
                 ('date', models.DateField()),
                 ('time', models.TimeField()),
                 ('tags', models.CharField(max_length=200)),
                 ('created_on', models.DateTimeField(auto_now_add=True)),
-                ('status', models.IntegerField(choices=[(0, 'Draft'), (1, 'Published')], default=0)),
+                (
+                    'status',
+                    models.IntegerField(choices=[
+                        (0, 'Draft'), (1, 'Published')
+                        ], default=0)
+                ),
                 ('excerpt', models.TextField(blank=True)),
                 ('updated_on', models.DateTimeField(auto_now=True)),
-                ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='blog_posts', to=settings.AUTH_USER_MODEL)),
+                (
+                    'author',
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name='blog_posts',
+                        to=settings.AUTH_USER_MODEL
+                    )
+                ),
             ],
             options={
                 'ordering': ['-date'],
@@ -40,12 +69,34 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Comment',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                (
+                    'id',
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name='ID'
+                    )
+                ),
                 ('body', models.TextField()),
                 ('approved', models.BooleanField(default=False)),
                 ('created_on', models.DateTimeField(auto_now_add=True)),
-                ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='commenter', to=settings.AUTH_USER_MODEL)),
-                ('event', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='comments', to='events.event')),
+                (
+                    'author',
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name='commenter',
+                        to=settings.AUTH_USER_MODEL
+                    )
+                ),
+                (
+                    'event',
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name='comments',
+                        to='events.event'
+                    )
+                ),
             ],
             options={
                 'ordering': ['created_on'],

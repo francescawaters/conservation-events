@@ -37,7 +37,7 @@ class TestContactForm(TestCase):
 
         self.assertFalse(form.is_valid(), msg='Form submits '
                                               'with missing email value')
-        
+
     def test_contact_form_missing_message_field(self):
         """ Test for missing message field in the contact form """
         form = ContactForm({
